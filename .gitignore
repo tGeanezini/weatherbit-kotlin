@@ -29,7 +29,7 @@ hs_err_pid*
 
 ### Sonar ###
 #Sonar generated dir
-/.sonar/
+.idea/**/sonarlint/
 
 ### AndroidStudio ###
 # Covers files to be ignored for android development using Android Studio.
