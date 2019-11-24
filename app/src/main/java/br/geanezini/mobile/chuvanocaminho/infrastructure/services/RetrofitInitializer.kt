@@ -2,6 +2,7 @@ package br.geanezini.mobile.chuvanocaminho.infrastructure.services
 
 import android.content.Context
 import br.geanezini.mobile.chuvanocaminho.infrastructure.interfaces.ICityForecastService
+import br.geanezini.mobile.chuvanocaminho.BASE_URL
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -20,7 +21,7 @@ class RetrofitInitializer {
     constructor(contextParam: Context) {
         this.context = contextParam
         retrofit = Retrofit.Builder()
-            .baseUrl("https://api.weatherbit.io/v2.0")
+            .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .client(okHttpClient)
             .build()

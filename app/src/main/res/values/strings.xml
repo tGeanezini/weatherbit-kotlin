@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Chuva no caminho</string>
+    <string name="search_city_label">Digite o nome da cidade de que deseja saber a previsão do tempo</string>
+    <string name="search_city_hint">Ex: Curitiba</string>
+    <string name="search_city_button">Pesquisar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="check_connection_message">Não foi possível buscar as informações para a cidade informada.  Cheque sua conexão e tente novamente mais tarde.</string>
+    <string name="check_connection_title">Sem conexão</string>
 </resources>
