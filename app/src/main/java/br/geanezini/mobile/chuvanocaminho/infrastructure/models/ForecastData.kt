@@ -23,7 +23,7 @@ data class ForecastData (@SerializedName("moonrise_ts") var moonriseTimestamp: L
                          @SerializedName("valid_date") var forecastValidDate: String,
                          @SerializedName("app_max_temp") var feelsLikeMax: Double,
                          @SerializedName("vis") var visibility: Double,
-                         @SerializedName("dewpt") var dewPoint: Int,
+                         @SerializedName("dewpt") var dewPoint: Double,
                          @SerializedName("snow") var accumulatedSnowfall: Double,
                          @SerializedName("uv") var maximumUvIndex: Double,
                          @SerializedName("wind_dir") var windDirectionValue: Int,

@@ -27,3 +27,6 @@ Z
 *app/src/main/res/layout/fragment_title.xml,d\b\db68b6800392eb6ad87bcc0ca37241e99df4f50e
 ]
 -app/src/main/res/layout/fragment_forecast.xml,f\1\f1dcc7fffec0546cab07d413a9d660796a8671ab
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302

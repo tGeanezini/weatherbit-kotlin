@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import br.geanezini.mobile.chuvanocaminho.databinding.FragmentTitleBinding
 
 class TitleFragment : Fragment() {
@@ -29,7 +30,7 @@ class TitleFragment : Fragment() {
                 dialog.setTitle(getString(R.string.check_connection_title))
                 dialog.show()
             } else {
-                Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_forecastFragment)
+                findNavController().navigate(R.id.action_titleFragment_to_forecastFragment)
             }
         }
 
