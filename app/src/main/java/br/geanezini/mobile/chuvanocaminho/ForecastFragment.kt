@@ -15,6 +15,7 @@ import kotlinx.android.synthetic.main.fragment_forecast.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.util.concurrent.TimeUnit
 
 class ForecastFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -41,6 +42,15 @@ class ForecastFragment : Fragment() {
                     binding.rainChanceValueText.text = forecast.probabilityOfPrecipitation.toString() + "%"
                     binding.maxTempValueText.text = forecast.maxTemperature.toString() + "° C"
                     binding.minTempValueText.text = forecast.minimumTemperature.toString() + "° C"
+                    binding.windSpeedValueText.text = forecast.windSpeed.toString() + " Km/h"
+
+                    val sunriseTime = String.format("%02d:%02d", TimeUnit.MILLISECONDS.toHours(forecast.sunriseTimestamp),
+                        TimeUnit.MILLISECONDS.toMinutes(forecast.sunriseTimestamp) % TimeUnit.HOURS.toMinutes(1))
+                    val sunsetTime = String.format("%02d:%02d", TimeUnit.MILLISECONDS.toHours(forecast.sunsetTimestamp),
+                        TimeUnit.MILLISECONDS.toMinutes(forecast.sunsetTimestamp) % TimeUnit.HOURS.toMinutes(1))
+
+                    binding.sunriseValueText.text = sunriseTime
+                    binding.sunsetValueText.text = sunsetTime
                 }
             }
 

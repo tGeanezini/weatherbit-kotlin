@@ -13,4 +13,7 @@
     <string name="text_temperatura_maxima">Temperatura Máxima</string>
     <string name="text_chance_de_chuva">Chance de chuva</string>
     <string name="progress_forecast">Carregando previsão do tempo</string>
+    <string name="text_velocidade_vento">Velocidade do vento</string>
+    <string name="text_nascer_do_sol">Nascer do Sol</string>
+    <string name="text_por_do_sol">Pôr do Sol</string>
 </resources>
