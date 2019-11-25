@@ -1,4 +1,4 @@
-package br.geanezini.mobile.chuvanocaminho.infrastructure.models
+package br.geanezini.mobile.chuvanocaminho.models
 
 import com.google.gson.annotations.SerializedName
 
@@ -36,4 +36,5 @@ data class ForecastData (@SerializedName("moonrise_ts") var moonriseTimestamp: L
                          @SerializedName("min_temp") var minimumTemperature: Double,
                          @SerializedName("clouds_mid") var midLevelCloudCoverage: Int,
                          @SerializedName("clouds_low") var lowLevelCloudCoverage: Int,
-                         @SerializedName("weather") var weatherInfo: WeatherInfo)
+                         @SerializedName("weather") var weatherInfo: WeatherInfo
+)

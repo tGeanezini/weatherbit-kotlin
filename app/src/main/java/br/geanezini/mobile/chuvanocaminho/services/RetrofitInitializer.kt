@@ -1,8 +1,8 @@
-package br.geanezini.mobile.chuvanocaminho.infrastructure.services
+package br.geanezini.mobile.chuvanocaminho.services
 
 import android.content.Context
-import br.geanezini.mobile.chuvanocaminho.infrastructure.interfaces.ICityForecastService
-import br.geanezini.mobile.chuvanocaminho.BASE_URL
+import br.geanezini.mobile.chuvanocaminho.interfaces.ICityForecastService
+import br.geanezini.mobile.chuvanocaminho.utils.BASE_URL
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

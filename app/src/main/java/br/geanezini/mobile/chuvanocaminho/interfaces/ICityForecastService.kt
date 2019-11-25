@@ -1,6 +1,6 @@
-package br.geanezini.mobile.chuvanocaminho.infrastructure.interfaces
+package br.geanezini.mobile.chuvanocaminho.interfaces
 
-import br.geanezini.mobile.chuvanocaminho.infrastructure.models.CityForecast
+import br.geanezini.mobile.chuvanocaminho.models.CityForecast
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

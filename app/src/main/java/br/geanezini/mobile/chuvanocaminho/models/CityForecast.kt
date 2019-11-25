@@ -1,4 +1,4 @@
-package br.geanezini.mobile.chuvanocaminho.infrastructure.models
+package br.geanezini.mobile.chuvanocaminho.models
 
 import com.google.gson.annotations.SerializedName
 

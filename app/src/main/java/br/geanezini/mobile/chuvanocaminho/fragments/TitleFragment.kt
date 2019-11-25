@@ -1,4 +1,4 @@
-package br.geanezini.mobile.chuvanocaminho
+package br.geanezini.mobile.chuvanocaminho.fragments
 
 import android.app.AlertDialog
 import android.content.Context
@@ -11,8 +11,8 @@ import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
+import br.geanezini.mobile.chuvanocaminho.R
 import br.geanezini.mobile.chuvanocaminho.databinding.FragmentTitleBinding
 import kotlinx.android.synthetic.main.fragment_title.*
 
