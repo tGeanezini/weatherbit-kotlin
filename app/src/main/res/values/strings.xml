@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Chuva no caminho</string>
+    <string name="search_city_label">Digite o nome da cidade de que deseja saber a previsão do tempo</string>
+    <string name="search_city_hint">Ex: Curitiba</string>
+    <string name="search_city_button">Pesquisar</string>
+    <string name="search_city_alert_title">Atenção</string>
+    <string name="search_city_alert_message">Digite o nome de uma cidade para continuar.</string>
+    <string name="check_connection_title">Sem conexão</string>
+    <string name="check_connection_message">Não foi possível buscar as informações para a cidade informada.  Cheque sua conexão e tente novamente mais tarde.</string>
+    <string name="get_forecast_failed_title">Falha</string>
+    <string name="get_forecast_failed_message">Ocorreu uma falha ao buscar a previsão do tempo para a cidade selecionada. Tente novamente mais tarde.</string>
+    <string name="text_temperatura_minima">Temperatura Mínima</string>
+    <string name="text_temperatura_maxima">Temperatura Máxima</string>
+    <string name="text_chance_de_chuva">Chance de chuva</string>
+    <string name="progress_forecast">Carregando previsão do tempo</string>
+    <string name="text_velocidade_vento">Velocidade do vento</string>
+    <string name="text_nascer_do_sol">Nascer do Sol</string>
+    <string name="text_por_do_sol">Pôr do Sol</string>
 </resources>
