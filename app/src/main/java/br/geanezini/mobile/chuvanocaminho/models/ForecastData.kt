@@ -1,6 +1,7 @@
 package br.geanezini.mobile.chuvanocaminho.models
 
 import com.google.gson.annotations.SerializedName
+import kotlin.math.roundToInt
 
 data class ForecastData (@SerializedName("moonrise_ts") var moonriseTimestamp: Long,
                          @SerializedName("wind_cdir") var windDirection: String,
@@ -37,4 +38,8 @@ data class ForecastData (@SerializedName("moonrise_ts") var moonriseTimestamp: L
                          @SerializedName("clouds_mid") var midLevelCloudCoverage: Int,
                          @SerializedName("clouds_low") var lowLevelCloudCoverage: Int,
                          @SerializedName("weather") var weatherInfo: WeatherInfo
-)
+) {
+    fun formatWindSpeed(windSpeed: Double) : Int {
+        return windSpeed.roundToInt()
+    }
+}

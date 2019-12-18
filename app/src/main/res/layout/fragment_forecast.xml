@@ -4,6 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="br.geanezini.mobile.chuvanocaminho.fragments.ForecastFragment">
 
+    <data>
+        <variable
+            name="forecastData"
+            type="br.geanezini.mobile.chuvanocaminho.models.ForecastData" />
+        <variable
+            name="cityForecast"
+            type="br.geanezini.mobile.chuvanocaminho.models.CityForecast" />
+    </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/titleConstraint"
         android:layout_width="match_parent"
@@ -85,6 +93,7 @@
                         android:layout_marginEnd="16dp"
                         android:textAlignment="center"
                         android:textSize="36sp"
+                        android:text='@{forecastData.averageTemperature+"° C"}'
                         tools:text="26° C" />
 
                     <TextView
@@ -97,6 +106,7 @@
                         android:layout_marginEnd="16dp"
                         android:textAlignment="center"
                         android:textSize="18sp"
+                        android:text="@{forecastData.weatherInfo.description}"
                         tools:text="Nublado" />
 
                     <TextView
@@ -110,6 +120,7 @@
                         android:layout_marginBottom="16dp"
                         android:textAlignment="center"
                         android:textSize="36sp"
+                        android:text="@{cityForecast.cityName}"
                         tools:text="Curitiba" />
                 </LinearLayout>
 
@@ -166,6 +177,7 @@
                             android:layout_weight="1"
                             android:textAlignment="viewEnd"
                             android:textSize="18sp"
+                            android:text='@{forecastData.probabilityOfPrecipitation + "%"}'
                             tools:text="20%" />
 
                     </LinearLayout>
@@ -194,6 +206,7 @@
                             android:layout_weight="1"
                             android:textAlignment="viewEnd"
                             android:textSize="18sp"
+                            android:text='@{forecastData.maxTemperature + "° C"}'
                             tools:text="28° C" />
 
                     </LinearLayout>
@@ -222,6 +235,7 @@
                             android:layout_weight="1"
                             android:textAlignment="viewEnd"
                             android:textSize="18sp"
+                            android:text='@{forecastData.minimumTemperature + "° C"}'
                             tools:text="19° C" />
 
                     </LinearLayout>
@@ -250,6 +264,7 @@
                             android:layout_weight="1"
                             android:textAlignment="viewEnd"
                             android:textSize="18sp"
+                            android:text='@{forecastData.formatWindSpeed(forecastData.windSpeed)+ " Km/h"}'
                             tools:text="24 Km/h" />
 
                     </LinearLayout>

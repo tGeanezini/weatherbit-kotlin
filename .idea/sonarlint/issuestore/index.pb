@@ -1,24 +1,6 @@
 
-t
-Dapp/src/main/java/br/geanezini/mobile/chuvanocaminho/MainActivity.kt,8\d\8d938b9bc405536f8c45d2113c838b33827cd3b2
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
-Š
-Zapp/src/main/java/br/geanezini/mobile/chuvanocaminho/infrastructure/models/CityForecast.kt,6\c\6c4c5d464c249ebc6ac934ac01329d70ba19068c
-Š
-Zapp/src/main/java/br/geanezini/mobile/chuvanocaminho/infrastructure/models/ForecastData.kt,1\7\17508eb876b0331531733b429144dc7607de137f
-‰
-Yapp/src/main/java/br/geanezini/mobile/chuvanocaminho/infrastructure/models/WeatherInfo.kt,1\f\1f517a48cc6f74b38fd1d6e816a4daa4f8f4396b
-–
-fapp/src/main/java/br/geanezini/mobile/chuvanocaminho/infrastructure/interfaces/ICityForecastService.kt,4\8\48deae4d3ef475bb0c4fbb3b2b25ea0c35ab256c
-“
-capp/src/main/java/br/geanezini/mobile/chuvanocaminho/infrastructure/services/RetrofitInitializer.kt,b\f\bf5e1d1f9d9bee6d73a198366123b29f738216ce
-q
-Aapp/src/main/java/br/geanezini/mobile/chuvanocaminho/Constants.kt,d\4\d4ce6ebec64b4d2848d2997732735b2ece6bd653
-x
-Happ/src/main/java/br/geanezini/mobile/chuvanocaminho/ForecastFragment.kt,1\a\1ac89dbc85db188bed05ea492ccbd6bba579c440
-u
-Eapp/src/main/java/br/geanezini/mobile/chuvanocaminho/TitleFragment.kt,0\e\0eaae119663d4fdfdaad2490e928b03839f2184c
 Y
 )app/src/main/res/layout/activity_main.xml,7\6\76b07e40f24cce093536731477540f12e7da3cb6
 S
@@ -30,3 +12,5 @@ Z
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+‚
+Rapp/src/main/java/br/geanezini/mobile/chuvanocaminho/fragments/ForecastFragment.kt,3\7\37c7788fcb99bdcbcc19ca2845a21e7e75979427

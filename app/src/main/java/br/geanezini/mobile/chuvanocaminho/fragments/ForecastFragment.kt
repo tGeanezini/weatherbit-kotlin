@@ -47,13 +47,8 @@ class ForecastFragment : Fragment() {
                     // Carrega a previsão do tempo para o dia seguinte
                     val forecast = it.forecastData.last()
 
-                    binding.cityText.text = it.cityName
-                    binding.temperatureText.text = forecast.averageTemperature.toString() + "° C"
-                    binding.weatherDescText.text = forecast.weatherInfo.description
-                    binding.rainChanceValueText.text = forecast.probabilityOfPrecipitation.toString() + "%"
-                    binding.maxTempValueText.text = forecast.maxTemperature.toString() + "° C"
-                    binding.minTempValueText.text = forecast.minimumTemperature.toString() + "° C"
-                    binding.windSpeedValueText.text = forecast.windSpeed.roundToInt().toString() + " Km/h"
+                    binding.cityForecast = it
+                    binding.forecastData = forecast
 
                     val timestampFormat = SimpleDateFormat("HH:mm", Locale.getDefault())
                     timestampFormat.timeZone = TimeZone.getDefault()
