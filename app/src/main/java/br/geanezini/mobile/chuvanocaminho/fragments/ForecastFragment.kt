@@ -7,20 +7,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import br.geanezini.mobile.chuvanocaminho.utils.API_KEY
 import br.geanezini.mobile.chuvanocaminho.R
-import br.geanezini.mobile.chuvanocaminho.utils.SEARCH_DAYS
-import br.geanezini.mobile.chuvanocaminho.utils.SEARCH_LANG
 import br.geanezini.mobile.chuvanocaminho.databinding.FragmentForecastBinding
 import br.geanezini.mobile.chuvanocaminho.models.CityForecast
 import br.geanezini.mobile.chuvanocaminho.services.RetrofitInitializer
+import br.geanezini.mobile.chuvanocaminho.utils.API_KEY
+import br.geanezini.mobile.chuvanocaminho.utils.SEARCH_DAYS
+import br.geanezini.mobile.chuvanocaminho.utils.SEARCH_LANG
 import kotlinx.android.synthetic.main.fragment_forecast.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.text.SimpleDateFormat
-import java.util.*
-import kotlin.math.roundToInt
 
 class ForecastFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -49,15 +46,6 @@ class ForecastFragment : Fragment() {
 
                     binding.cityForecast = it
                     binding.forecastData = forecast
-
-                    val timestampFormat = SimpleDateFormat("HH:mm", Locale.getDefault())
-                    timestampFormat.timeZone = TimeZone.getDefault()
-
-                    val sunriseTime = Date(forecast.sunriseTimestamp * 1000)
-                    val sunsetTime = Date(forecast.sunsetTimestamp * 1000)
-
-                    binding.sunriseValueText.text = timestampFormat.format(sunriseTime)
-                    binding.sunsetValueText.text = timestampFormat.format(sunsetTime)
                 }
             }
 

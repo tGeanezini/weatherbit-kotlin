@@ -1,6 +1,8 @@
 package br.geanezini.mobile.chuvanocaminho.models
 
 import com.google.gson.annotations.SerializedName
+import java.text.SimpleDateFormat
+import java.util.*
 import kotlin.math.roundToInt
 
 data class ForecastData (@SerializedName("moonrise_ts") var moonriseTimestamp: Long,
@@ -37,9 +39,16 @@ data class ForecastData (@SerializedName("moonrise_ts") var moonriseTimestamp: L
                          @SerializedName("min_temp") var minimumTemperature: Double,
                          @SerializedName("clouds_mid") var midLevelCloudCoverage: Int,
                          @SerializedName("clouds_low") var lowLevelCloudCoverage: Int,
-                         @SerializedName("weather") var weatherInfo: WeatherInfo
-) {
-    fun formatWindSpeed(windSpeed: Double) : Int {
-        return windSpeed.roundToInt()
+                         @SerializedName("weather") var weatherInfo: WeatherInfo) {
+    fun formatDoubleToInt(value: Double) : Int {
+        return value.roundToInt()
+    }
+
+    fun tsToTime(ts: Long) : String {
+        val timestampFormat = SimpleDateFormat("HH:mm", Locale.getDefault())
+        timestampFormat.timeZone = TimeZone.getDefault()
+
+        val tsTime = Date(ts * 1000)
+        return timestampFormat.format(tsTime)
     }
 }

@@ -264,7 +264,7 @@
                             android:layout_weight="1"
                             android:textAlignment="viewEnd"
                             android:textSize="18sp"
-                            android:text='@{forecastData.formatWindSpeed(forecastData.windSpeed)+ " Km/h"}'
+                            android:text='@{forecastData.formatDoubleToInt(forecastData.windSpeed)+ " Km/h"}'
                             tools:text="24 Km/h" />
 
                     </LinearLayout>
@@ -321,6 +321,7 @@
                             android:layout_weight="1"
                             android:textAlignment="viewEnd"
                             android:textSize="18sp"
+                            android:text='@{forecastData.tsToTime(forecastData.sunriseTimestamp)}'
                             tools:text="06:30" />
 
                     </LinearLayout>
@@ -349,6 +350,7 @@
                             android:layout_weight="1"
                             android:textAlignment="viewEnd"
                             android:textSize="18sp"
+                            android:text='@{forecastData.tsToTime(forecastData.sunsetTimestamp)}'
                             tools:text="18:45" />
                     </LinearLayout>
 
